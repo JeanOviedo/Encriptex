@@ -1,5 +1,7 @@
 # Encriptex
-Proyecto realizado para el challeger de oracle y alura latam, que nos permite encritar de forma sencilla textos de acuerdo a ciertos requerimientos establecidos.
+Proyecto realizado para el challeger de oracle y alura latam, que nos permite encriptar de forma sencilla textos de acuerdo a ciertos requerimientos establecidos.
+
+![image](https://github.com/JeanOviedo/Encriptex/blob/main/imagen.png?raw=true)
 
 Las "llaves" de encriptación que utilizaremos son las siguientes:
 
