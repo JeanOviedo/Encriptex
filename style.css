@@ -21,7 +21,11 @@ body {
   padding: 15px;
   width: 30vw;
   margin: auto;
+}
 
+.img {
+  height: 35px;
+  width: 35px;
 }
 
 .box {
