@@ -1,6 +1,14 @@
 # Encriptex
 Proyecto realizado para el challeger de oracle y alurs latam, que nos permite encritar de forma sencilla textos de acuerdo a ciertos requerimientos establecidos.
 
+Las "llaves" de encriptación que utilizaremos son las siguientes:
+
+La letra "e" es convertida para "enter"
+La letra "i" es convertida para "imes"
+La letra "a" es convertida para "ai"
+La letra "o" es convertida para "ober"
+La letra "u" es convertida para "ufat"
+
 Requisitos:
 - Debe funcionar solo con letras minúsculas
 - No deben ser utilizados letras con acentos ni caracteres especiales
