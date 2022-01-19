@@ -45,6 +45,7 @@ function cambiaValores() {
     div1.style.display = "";
   } else {
     let encriptando = textoencriptar.replace(/e/g, "enter");
+    encriptando = encriptando.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
     encriptando = encriptando.replace(/i/g, "imes");
     console.log("imes", encriptando);
     encriptando = encriptando.replace(/a/g, "ai");
@@ -73,6 +74,7 @@ function cambiaValoresDes() {
     div1.style.display = "";
   } else {
     let encriptando = textodesencriptar.replace(/enter/g, "e");
+    encriptando = encriptando.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
     encriptando = encriptando.replace(/imes/g, "i");
     console.log("imes", encriptando);
     encriptando = encriptando.replace(/ai/g, "a");

@@ -14,8 +14,8 @@
   <main class="main">
     <section class="form box">
       <form id="transactionForm" action="">
-        <label for="input-texto">Solo letras minúsculas, sin acento</label><br/><br/>
-        <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui">
+        <label for="input-texto">Se convertira automaticamente en letras minúsculas y se quitaran los acentos</label><br/><br/>
+        <input class="text-input" type="text" name="input-texto" id="input-texto"  style="text-transform:lowercase;" placeholder="Ingrese el texto aqui">
         <input class="btn" type="submit" value="Encriptar" id="btn-encriptar">
         <input class="btn" type="submit" value="Desencriptar" id="btn-desencriptar">
       </form><br/><br/>
@@ -25,7 +25,7 @@
   
     <section class="msg box">
       <h4 id="">Mensaje encriptado:</h4><br/>
-      <input class="text-input" type="text" id="msg"></input>
+      <input class="text-input" type="text" id="msg" style="text-transform:lowercase;"></input>
       <input class="btn" type="submit" onclick="inutil()" value="Copiar" id="btn-copy">
       <label id="copi" style="display:none;">!Copiado con exito!</label>
         <label id="no" style="display:none;">!No hay nada que copiar!</label>
