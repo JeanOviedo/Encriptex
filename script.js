@@ -60,6 +60,8 @@ function cambiaValores() {
     div.style.display = "none";
     div3 = document.getElementById("rellene");
     div3.style.display = "none";
+    div31 = document.getElementById("no");
+    div31.style.display = "none";
   }
 }
 
@@ -86,6 +88,8 @@ function cambiaValoresDes() {
     div.style.display = "none";
     div3 = document.getElementById("rellene");
     div3.style.display = "none";
+    div31 = document.getElementById("no");
+    div31.style.display = "none";
   }
 }
 
