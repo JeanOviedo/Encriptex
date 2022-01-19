@@ -40,12 +40,16 @@ transactionForm.addEventListener("submit", function (event) {
 
 function cambiaValores() {
   let textoencriptar = document.getElementById("input-texto").value;
+  textoencriptar = textoencriptar.toLowerCase();
+  textoencriptar = textoencriptar
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
   if (!textoencriptar) {
     div1 = document.getElementById("rellene");
     div1.style.display = "";
   } else {
     let encriptando = textoencriptar.replace(/e/g, "enter");
-    encriptando = encriptando.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+
     encriptando = encriptando.replace(/i/g, "imes");
     console.log("imes", encriptando);
     encriptando = encriptando.replace(/a/g, "ai");
@@ -68,13 +72,17 @@ function cambiaValores() {
 
 function cambiaValoresDes() {
   let textodesencriptar = document.getElementById("input-texto").value;
+  textodesencriptar = textodesencriptar.toLowerCase();
+  textodesencriptar = textodesencriptar
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
 
   if (!textodesencriptar) {
     div1 = document.getElementById("rellene");
     div1.style.display = "";
   } else {
     let encriptando = textodesencriptar.replace(/enter/g, "e");
-    encriptando = encriptando.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+
     encriptando = encriptando.replace(/imes/g, "i");
     console.log("imes", encriptando);
     encriptando = encriptando.replace(/ai/g, "a");
