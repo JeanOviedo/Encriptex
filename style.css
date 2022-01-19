@@ -80,10 +80,23 @@ body {
     display: block;
   }
 
+  .img {
+    height: 27px;
+    width: 27px;
+  }
+
   .main {
     width: 80vw;
     margin: auto;
     display: block;
     justify-content: center;
+  }
+  .titulo {
+    padding-top: 15px;
+    width: 30vw;
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+    display: flex;
   }
 }
