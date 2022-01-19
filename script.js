@@ -30,7 +30,7 @@ function cargaPagina() {
 
   let btn3 = document
     .getElementById("btn-copy")
-    .addEventListener("click", Copiado);
+    .addEventListener("click", Copy);
 }
 
 const transactionForm = document.getElementById("transactionForm");
@@ -89,13 +89,25 @@ function cambiaValoresDes() {
   }
 }
 
-function Copiado() {
-  div = document.getElementById("copi");
-  div.style.display = "";
-}
+function inutil() {}
+// function Copiado() {
+//   div = document.getElementById("copi");
+//   div.style.display = "";
+// }
 
-function copyToClipBoard() {
+function Copy() {
   let content = document.getElementById("msg");
-  content.select();
-  document.execCommand("copy");
+  let textocopiar = document.getElementById("msg").value;
+  let no = document.getElementById("no");
+  let copi = document.getElementById("copi");
+  if (!textocopiar) {
+    no.style.display = "";
+    copi.style.display = "none";
+    // alert("No se puede copiar vacio");
+  } else {
+    no.style.display = "none";
+    copi.style.display = "";
+    content.select();
+    document.execCommand("copy");
+  }
 }

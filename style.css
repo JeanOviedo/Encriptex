@@ -48,6 +48,8 @@ body {
   border-radius: 0.5em;
   margin-top: 20px;
   cursor: pointer;
+  text-align: center;
+  align-items: center;
 }
 
 .text-input {
