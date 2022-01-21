@@ -24,8 +24,8 @@ body {
 }
 
 .img {
-  height: 35px;
-  width: 35px;
+  margin: 20px;
+  width: 15%;
 }
 
 .box {
@@ -83,8 +83,7 @@ body {
   }
 
   .img {
-    height: 27px;
-    width: 27px;
+    width: 40%;
   }
 
   .main {
